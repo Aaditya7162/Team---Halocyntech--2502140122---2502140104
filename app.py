@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import uuid
 import os
 from dotenv import load_dotenv
 from supabase import create_client, Client

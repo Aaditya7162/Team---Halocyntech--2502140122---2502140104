@@ -9,26 +9,9 @@ const currentUser = {
     isLoggedIn: false
 };
 
-function demonstrateEquality() {
-    let num = 5;
-    let str = "5";
-    
-    if (num == str) {
-        console.log("== True: 5 equals '5' in value.");
-    }
-    
-    if (num === str) {
-        console.log("=== True");
-    } else {
-        console.log("=== False: 5 (number) is not exactly equal to '5' (string).");
-    }
-}
-demonstrateEquality();
-
-
 const API_BASE = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" 
     ? "http://localhost:8080" 
-    : "https://your-backend-url.onrender.com"; // Replace with your backend live link
+    : "https://your-backend-url.onrender.com";
 const API_URL = `${API_BASE}/sales`;
 
 function showDashboard() {
